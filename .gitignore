@@ -1,0 +1,23 @@
+# ignore everything
+*
+
+# except:
+!/.gitignore
+!/README.md
+!/src
+!/src/**
+!/Makefile
+!/debug.Makefile
+
+!/report
+!/report/**
+
+!/foxglove_panels
+!/foxglove_panels/Vicente Rendo.json
+
+!/extra_files
+!/extra_files/faults.ods
+!/extra_files/faults-panel
+!/extra_files/faults-panel/**
+!/extra_files/report/report.tex
+!/extra_files/report/report.pdf

@@ -1,0 +1,860 @@
+{
+  "configById": {
+    "Plot!s6x6ww": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/CAN/MCU_OUT.throttle_pct",
+          "enabled": true,
+          "color": "#f5774d",
+          "id": "eacc0ca7-a1d6-43ac-8d64-90ac86a4c879",
+          "label": "Throttle (%)"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/CAN/MCU_OUT.torque_target_nm",
+          "enabled": true,
+          "color": "#cad660",
+          "id": "c6959063-a3b9-4a86-ae5e-fabebf975880",
+          "label": "Torque Target (Nm)",
+          "yAxisId": "05cd60f5-0055-4f0a-a92b-881099d6a693"
+        }
+      ],
+      "minYValue": 0,
+      "timeWindowMode": "sliding",
+      "xAxisDisplayMethod": "absolute",
+      "showLegend": true,
+      "followingViewWidth": 30,
+      "playbackBarPosition": "right",
+      "isSynced": true,
+      "maxYValue": 100,
+      "showPlotValuesInLegend": false,
+      "secondaryAxes": [
+        {
+          "id": "05cd60f5-0055-4f0a-a92b-881099d6a693",
+          "min": 0,
+          "max": 600,
+          "label": "Torque (Nm)"
+        }
+      ],
+      "yAxisLabel": "Percentage",
+      "foxglovePanelTitle": "Motor",
+      "showXAxisLabels": true
+    },
+    "Plot!3xqiml7": {
+      "minYValue": -1,
+      "maxYValue": 101,
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/CAN/MCU_OUT.brake_pedal_pct",
+          "enabled": true,
+          "color": "#4e98e2",
+          "id": "1d45c4c3-030a-4e5f-85d6-312506bc7623",
+          "label": "Brake Pedal (%)"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/CAN/MCU_OUT.brake_pressure_light_threshold",
+          "enabled": true,
+          "color": "#5cd6a9",
+          "id": "d25b8eb5-80f9-4b61-8e47-e8a5f684ff8f",
+          "label": "Brake Light Threshold"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/CAN/MCU_OUT.brake_pressure_bar",
+          "enabled": true,
+          "color": "#f5774d",
+          "id": "bcd7ff56-e362-4318-aa55-b5af21a03600",
+          "label": "Brake Pressure (bar)",
+          "yAxisId": "34751aa8-69de-4025-a637-72194745ef9c"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/CAN/MCU_OUT.brake_pressure_bar_target",
+          "enabled": true,
+          "color": "#f6ff61",
+          "id": "29233065-12c0-4d11-98e0-9df0208b6aab",
+          "label": "Target Brake Pressure (bar)",
+          "yAxisId": "34751aa8-69de-4025-a637-72194745ef9c"
+        }
+      ],
+      "showPlotValuesInLegend": false,
+      "showLegend": true,
+      "timeWindowMode": "sliding",
+      "followingViewWidth": 30,
+      "foxglovePanelTitle": "Brakes",
+      "secondaryAxes": [
+        {
+          "id": "34751aa8-69de-4025-a637-72194745ef9c",
+          "label": "bar",
+          "min": 0,
+          "max": 85
+        }
+      ],
+      "yAxisLabel": "%",
+      "showXAxisLabels": true,
+      "xAxisDisplayMethod": "absolute"
+    },
+    "Plot!34w0tfm": {
+      "foxglovePanelTitle": "Wheels",
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/CAN/MCU_OUT.wheel_rpm",
+          "enabled": true,
+          "color": "#4e98e2",
+          "yAxisId": "8964a330-3f5c-4d6c-9a31-7309216384ee",
+          "id": "7ab7defe-a2c2-4903-b1b4-a32274977b5b",
+          "label": "Average Wheel Rotation Speed (RPM)"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/CAN/MCU_OUT.speed_mps",
+          "enabled": true,
+          "color": "#f5774d",
+          "id": "4b34350e-1224-4466-85dc-a40e42110a42",
+          "label": "Vehicle Speed (m/s)"
+        }
+      ],
+      "secondaryAxes": [
+        {
+          "id": "8964a330-3f5c-4d6c-9a31-7309216384ee",
+          "min": 0,
+          "max": 1800,
+          "label": "RPM"
+        }
+      ],
+      "minYValue": 0,
+      "maxYValue": 45,
+      "yAxisLabel": "m/s",
+      "timeWindowMode": "sliding",
+      "followingViewWidth": 30,
+      "showXAxisLabels": true,
+      "xAxisDisplayMethod": "absolute"
+    },
+    "Plot!46bvrh": {
+      "paths": [
+        {
+          "value": "/CAN/MCU_OUT.accel_wheel_mps2",
+          "enabled": true,
+          "timestampMethod": "receiveTime",
+          "color": "#f5774d",
+          "id": "ffcdd539-1637-4eb1-8004-25160eea5490",
+          "lineSize": 0.3,
+          "label": "Acceleration X (wheel estimation) "
+        },
+        {
+          "value": "/CAN/MCU_OUT.accel_x_mps2",
+          "enabled": true,
+          "timestampMethod": "receiveTime",
+          "color": "#f7df71",
+          "id": "e54c7e2f-487f-4ef1-8797-3c37830ee279",
+          "label": "Acceleration X"
+        },
+        {
+          "value": "/CAN/MCU_OUT.accel_y_mps2",
+          "enabled": true,
+          "timestampMethod": "receiveTime",
+          "color": "#5cd6a9",
+          "id": "85ce6db3-8965-4c05-a60b-9cf95b4892f3",
+          "label": "Acceleration Y"
+        }
+      ],
+      "foxglovePanelTitle": "Acceleration",
+      "minYValue": -15,
+      "maxYValue": 15,
+      "showYAxisLabels": true,
+      "showXAxisLabels": true,
+      "xAxisDisplayMethod": "absolute",
+      "yAxisLabel": "m/s^2"
+    },
+    "Stack!19dlj7t": {
+      "panels": [
+        {
+          "panelId": "Plot!s6x6ww",
+          "size": 0.48
+        },
+        {
+          "panelId": "Plot!3xqiml7",
+          "size": 0.48
+        }
+      ],
+      "foxglovePanelTitle": "Driving",
+      "showPanelToolbars": false
+    },
+    "Stack!21719x5": {
+      "panels": [
+        {
+          "panelId": "Plot!34w0tfm",
+          "size": 0.48
+        },
+        {
+          "panelId": "Plot!46bvrh",
+          "size": 0.48
+        }
+      ],
+      "foxglovePanelTitle": "Dynamics",
+      "showPanelToolbars": false
+    },
+    "Plot!48ls4b": {
+      "paths": [
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/CAN/MCU_OUT.sdc_after_vcu_raw",
+          "enabled": true,
+          "color": "#f7df71",
+          "id": "c6e7b2bd-0eaf-4091-9a77-4592de8227de",
+          "label": "Raw"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/CAN/MCU_OUT.sdc_after_vcu_filtered_ma",
+          "enabled": true,
+          "color": "#5cd6a9",
+          "id": "ae56111d-87e4-43a5-8865-c4db0e28fa8a",
+          "label": "Moving Average"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "10",
+          "enabled": true,
+          "color": "#a395e2",
+          "id": "143e9da1-5654-4873-a52c-772453e5aeaf",
+          "label": "SDC Threshold (Cutoff)"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "2",
+          "enabled": true,
+          "color": "#61cbff",
+          "id": "306c0ea7-c261-41c4-b711-ddf6adb065ea",
+          "label": "SDC Threshold (Close)"
+        },
+        {
+          "timestampMethod": "receiveTime",
+          "value": "/CAN/MCU_OUT.sdc_vcu",
+          "enabled": true,
+          "color": "#4e98e2",
+          "id": "d7b13004-b8f7-4f59-8d16-9b6034b63efd",
+          "label": "Is Closed"
+        }
+      ],
+      "minYValue": -1,
+      "timeWindowMode": "sliding",
+      "xAxisDisplayMethod": "relative",
+      "showLegend": false,
+      "followingViewWidth": 30,
+      "playbackBarPosition": "right",
+      "isSynced": true,
+      "maxYValue": 25,
+      "showPlotValuesInLegend": false,
+      "legendDisplay": "floating",
+      "foxglovePanelTitle": "VCU SDC Sensor"
+    },
+    "StateTransitions!1x8o7yc": {
+      "paths": [
+        {
+          "value": "/CAN/MCU_OUT.sdc_dash",
+          "timestampMethod": "receiveTime",
+          "customStates": {
+            "type": "discrete",
+            "states": [
+              {
+                "value": "True",
+                "color": "#7df57a",
+                "label": "Closed"
+              },
+              {
+                "value": "False",
+                "label": "Open",
+                "color": "#f57a7a"
+              }
+            ]
+          },
+          "id": "cf039171-78ae-4fd5-90f1-c2285e3caa19",
+          "label": "DASH"
+        },
+        {
+          "value": "/CAN/MCU_OUT.sdc_bspd",
+          "timestampMethod": "receiveTime",
+          "customStates": {
+            "type": "discrete",
+            "states": [
+              {
+                "value": "True",
+                "color": "#7df57a",
+                "label": "Closed"
+              },
+              {
+                "value": "False",
+                "label": "Open",
+                "color": "#f57a7a"
+              }
+            ]
+          },
+          "id": "81bdd3f1-3964-4efe-8a35-dc3bada40a2a",
+          "label": "BSPD"
+        },
+        {
+          "value": "/CAN/MCU_OUT.sdc_master_panel",
+          "timestampMethod": "receiveTime",
+          "customStates": {
+            "type": "discrete",
+            "states": [
+              {
+                "value": "True",
+                "color": "#7df57a",
+                "label": "Closed"
+              },
+              {
+                "value": "False",
+                "label": "Open",
+                "color": "#f57a7a"
+              }
+            ]
+          },
+          "id": "ed537357-1e33-4ddb-8506-278bcdc86938",
+          "label": "Master Panel"
+        },
+        {
+          "value": "/CAN/MCU_OUT.sdc_bms",
+          "timestampMethod": "receiveTime",
+          "customStates": {
+            "type": "discrete",
+            "states": [
+              {
+                "value": "True",
+                "color": "#7df57a",
+                "label": "Closed"
+              },
+              {
+                "value": "False",
+                "label": "Open",
+                "color": "#f57a7a"
+              }
+            ]
+          },
+          "id": "4a76bf19-f0f3-44a1-a69d-94e74c69386e",
+          "label": "BMS"
+        },
+        {
+          "value": "/CAN/MCU_OUT.sdc_vcu",
+          "timestampMethod": "receiveTime",
+          "customStates": {
+            "type": "discrete",
+            "states": [
+              {
+                "value": "True",
+                "color": "#7df57a",
+                "label": "Closed"
+              },
+              {
+                "value": "False",
+                "label": "Open",
+                "color": "#f57a7a"
+              }
+            ]
+          },
+          "id": "d65c7a3d-c77b-4206-816d-921250b4c932",
+          "label": "VCU"
+        }
+      ],
+      "isSynced": true,
+      "showLegend": false,
+      "xAxisDisplayMethod": "absolute",
+      "showPoints": false,
+      "timeWindowMode": "automatic",
+      "xAxisRange": 5,
+      "foxglovePanelTitle": "SDC Sensors",
+      "legendDisplay": "top"
+    },
+    "RawMessages!3wsztue": {
+      "defaultExpanded": false,
+      "topicPath": "/CAN/MCU_OUT",
+      "diffEnabled": false
+    },
+    "StateTransitions!4gbiu35": {
+      "paths": [
+        {
+          "value": "/CAN/MCU_OUT.r2d_stage",
+          "timestampMethod": "receiveTime",
+          "customStates": {
+            "type": "discrete",
+            "states": [
+              {
+                "value": "0",
+                "label": "Inactive",
+                "color": "#21272a"
+              },
+              {
+                "value": "1",
+                "color": "#21272a",
+                "label": "Deactivated"
+              },
+              {
+                "value": "5",
+                "label": "Active",
+                "color": "#7de677"
+              }
+            ]
+          },
+          "id": "77d3e022-418a-47c0-9a1d-361d50888d2d",
+          "label": "R2D"
+        },
+        {
+          "value": "/CAN/MCU_OUT.ats_stage",
+          "timestampMethod": "receiveTime",
+          "customStates": {
+            "type": "discrete",
+            "states": [
+              {
+                "value": "0",
+                "label": "Inactive",
+                "color": "#21272a"
+              },
+              {
+                "value": "1",
+                "label": "Deactivated",
+                "color": "#21272a"
+              },
+              {
+                "value": "6",
+                "label": "Active",
+                "color": "#7de677"
+              }
+            ]
+          },
+          "id": "b82b6235-a70d-4310-b650-2743ad841d69",
+          "label": "ATS"
+        }
+      ],
+      "isSynced": true,
+      "showLegend": false,
+      "xAxisDisplayMethod": "relative",
+      "showPoints": false,
+      "timeWindowMode": "sliding",
+      "xAxisRange": 30,
+      "foxglovePanelTitle": "R2D / ATS",
+      "legendDisplay": "top",
+      "playbackBarPosition": "right"
+    },
+    "Indicator!3498k5p": {
+      "path": "/actuators.R2D_LED",
+      "style": "background",
+      "fontSize": 24,
+      "fallbackColor": "#ff009c",
+      "fallbackLabel": "Invalid State",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "false",
+          "color": "#000000",
+          "label": "R2D"
+        },
+        {
+          "operator": "=",
+          "rawValue": "true",
+          "color": "#7de677",
+          "label": "R2D"
+        }
+      ],
+      "foxglovePanelTitle": "R2D LED"
+    },
+    "Indicator!2jgar1": {
+      "path": "/actuators.brake_light",
+      "style": "background",
+      "fontSize": 24,
+      "fallbackColor": "#ff009c",
+      "fallbackLabel": "Invalid State",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "false",
+          "color": "#000000",
+          "label": "Brk"
+        },
+        {
+          "operator": "=",
+          "rawValue": "true",
+          "color": "#ff5050",
+          "label": "Brk"
+        }
+      ],
+      "foxglovePanelTitle": "Brake Light"
+    },
+    "Indicator!3l7wnud": {
+      "path": "/actuators.TS_activated_led",
+      "style": "background",
+      "fontSize": 24,
+      "fallbackColor": "#ff009c",
+      "fallbackLabel": "Invalid State",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "false",
+          "color": "#000000",
+          "label": "TS"
+        },
+        {
+          "operator": "=",
+          "rawValue": "true",
+          "color": "#7de677",
+          "label": "TS"
+        }
+      ],
+      "foxglovePanelTitle": "TS LED"
+    },
+    "Indicator!knz1ha": {
+      "path": "/actuators.sdc_vcu_relay",
+      "style": "background",
+      "fontSize": 24,
+      "fallbackColor": "#ff009c",
+      "fallbackLabel": "Invalid State",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "false",
+          "color": "#000000",
+          "label": "VCU"
+        },
+        {
+          "operator": "=",
+          "rawValue": "true",
+          "color": "#224c20",
+          "label": "VCU"
+        }
+      ],
+      "foxglovePanelTitle": "VCU SDC Relay"
+    },
+    "Indicator!1qgz6go": {
+      "path": "/CAN/MCU_OUT.r2d_stage",
+      "style": "background",
+      "fontSize": 24,
+      "fallbackColor": "#ff009c",
+      "fallbackLabel": "Invalid State",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "0",
+          "color": "#121619",
+          "label": "Inactive"
+        },
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#330a0a",
+          "label": "Deactivated"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#ff5050",
+          "label": "R2D Activation Failed"
+        },
+        {
+          "operator": "=",
+          "rawValue": "3",
+          "color": "#3d1a4a",
+          "label": "Awaiting Throttle Idle & Brakes"
+        },
+        {
+          "operator": "=",
+          "rawValue": "4",
+          "color": "#7de677",
+          "label": "Ready to Drive"
+        }
+      ],
+      "foxglovePanelTitle": "R2D Stage"
+    },
+    "Indicator!4iaguqb": {
+      "path": "/CAN/MCU_OUT.r2d_deactivation_reason",
+      "style": "background",
+      "fontSize": 14,
+      "fallbackColor": "#ff009c",
+      "fallbackLabel": "Invalid State",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "0",
+          "color": "#121619",
+          "label": ""
+        },
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#121619",
+          "label": "User"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#330a0a",
+          "label": "SDC Not Closed"
+        },
+        {
+          "operator": "=",
+          "rawValue": "3",
+          "color": "#ff5050",
+          "label": "ATS Not Active"
+        }
+      ],
+      "foxglovePanelTitle": "R2D Deactivation Reason"
+    },
+    "Indicator!46ed6rr": {
+      "path": "/CAN/MCU_OUT.r2d_activation_error",
+      "style": "background",
+      "fontSize": 16,
+      "fallbackColor": "#ff009c",
+      "fallbackLabel": "Invalid State",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "0",
+          "color": "#121619",
+          "label": ""
+        },
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#ff5050",
+          "label": "Timed Out"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#121619",
+          "label": "User"
+        },
+        {
+          "operator": "=",
+          "rawValue": "3",
+          "color": "#ff5050",
+          "label": "SDC Not Closed"
+        },
+        {
+          "operator": "=",
+          "rawValue": "4",
+          "color": "#ff5050",
+          "label": "ATS Not Active"
+        }
+      ],
+      "foxglovePanelTitle": "R2D Activation Error"
+    },
+    "Indicator!44egoy4": {
+      "path": "/CAN/MCU_OUT.ats_stage",
+      "style": "background",
+      "fontSize": 24,
+      "fallbackColor": "#ff009c",
+      "fallbackLabel": "Invalid State",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "0",
+          "color": "#121619",
+          "label": "Inactive"
+        },
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#330a0a",
+          "label": "Deactivated"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#ff5050",
+          "label": "ATS Activation Failed"
+        },
+        {
+          "operator": "=",
+          "rawValue": "3",
+          "color": "#3e4b1a",
+          "label": "Checking SDC"
+        },
+        {
+          "operator": "=",
+          "rawValue": "4",
+          "color": "#3d1a4a",
+          "label": "Closing Relay"
+        },
+        {
+          "operator": "=",
+          "rawValue": "5",
+          "color": "#1a3a4a",
+          "label": "Awaiting SDC Closed"
+        },
+        {
+          "operator": "=",
+          "rawValue": "6",
+          "color": "#7de677",
+          "label": "ATS Active"
+        }
+      ],
+      "foxglovePanelTitle": "ATS Stage"
+    },
+    "Indicator!lp5moy": {
+      "path": "/CAN/MCU_OUT.ats_deactivation_reason",
+      "style": "background",
+      "fontSize": 16,
+      "fallbackColor": "#ff009c",
+      "fallbackLabel": "Invalid State",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "0",
+          "color": "#121619",
+          "label": ""
+        },
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#121619",
+          "label": "User"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#ff5050",
+          "label": "SDC Not Closed"
+        }
+      ],
+      "foxglovePanelTitle": "ATS Deactivation Reason"
+    },
+    "Indicator!383ylzl": {
+      "path": "/CAN/MCU_OUT.ats_activation_error",
+      "style": "background",
+      "fontSize": 16,
+      "fallbackColor": "#ff009c",
+      "fallbackLabel": "Invalid State",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "0",
+          "color": "#121619",
+          "label": ""
+        },
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#ff5050",
+          "label": "Timed Out"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#330a0a",
+          "label": "Canceled"
+        },
+        {
+          "operator": "=",
+          "rawValue": "3",
+          "color": "#ff5050",
+          "label": "SDC Dash"
+        },
+        {
+          "operator": "=",
+          "rawValue": "4",
+          "color": "#ff5050",
+          "label": "SDC BSPD"
+        },
+        {
+          "operator": "=",
+          "rawValue": "5",
+          "color": "#ff5050",
+          "label": "SDC Master Panel"
+        },
+        {
+          "operator": "=",
+          "rawValue": "6",
+          "color": "#ff5050",
+          "label": "SDC BMS"
+        }
+      ],
+      "foxglovePanelTitle": "ATS Activation Error"
+    },
+    "faults-panel.Faults!3pv1206": {}
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "direction": "row",
+    "first": "faults-panel.Faults!3pv1206",
+    "second": {
+      "direction": "row",
+      "first": {
+        "first": {
+          "first": "Stack!19dlj7t",
+          "second": "Stack!21719x5",
+          "direction": "row"
+        },
+        "second": {
+          "first": "Plot!48ls4b",
+          "second": "StateTransitions!1x8o7yc",
+          "direction": "row",
+          "splitPercentage": 24.4824016563147
+        },
+        "direction": "column",
+        "splitPercentage": 98
+      },
+      "second": {
+        "first": {
+          "first": {
+            "first": "RawMessages!3wsztue",
+            "second": "StateTransitions!4gbiu35",
+            "direction": "column",
+            "splitPercentage": 82.33709862428817
+          },
+          "second": {
+            "first": {
+              "first": "Indicator!3498k5p",
+              "second": "Indicator!2jgar1",
+              "direction": "row"
+            },
+            "second": {
+              "first": "Indicator!3l7wnud",
+              "second": "Indicator!knz1ha",
+              "direction": "row"
+            },
+            "direction": "row",
+            "splitPercentage": 50
+          },
+          "direction": "column",
+          "splitPercentage": 88.04945054945055
+        },
+        "second": {
+          "first": {
+            "first": "Indicator!1qgz6go",
+            "second": {
+              "first": "Indicator!4iaguqb",
+              "second": "Indicator!46ed6rr",
+              "direction": "row"
+            },
+            "direction": "column",
+            "splitPercentage": 66
+          },
+          "second": {
+            "first": "Indicator!44egoy4",
+            "second": {
+              "first": "Indicator!lp5moy",
+              "second": "Indicator!383ylzl",
+              "direction": "row"
+            },
+            "direction": "column",
+            "splitPercentage": 66
+          },
+          "direction": "column",
+          "splitPercentage": 50
+        },
+        "direction": "column",
+        "splitPercentage": 63.51766513056836
+      },
+      "splitPercentage": 84.77508650519032
+    },
+    "splitPercentage": 9.758001561280249
+  }
+}
