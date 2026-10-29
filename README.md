@@ -11,7 +11,7 @@ Build by running `make mcu` from your terminal. If successful, an `mcu` executab
 
 
 # 🖥️ Faults Panel
-The faults panel project is contained wihtin the `/extra_files/faults-panel` subdirectory.
+The faults panel project is contained within the `/extra_files/faults-panel` subdirectory.
 #### Dependencies
 - [npm](https://www.npmjs.com/) (known working on v12.2.1)
 
